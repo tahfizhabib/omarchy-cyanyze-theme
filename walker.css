@@ -1,0 +1,192 @@
+/* ────────────────────────────────────────────────────────────
+ * Omarchist Walker Theme — Aqua Ember Compact
+ * Flat corners + tighter spacing
+ * ────────────────────────────────────────────────────────────
+ */
+
+@define-color selected-text #4CD1C3;
+@define-color text #E8F1EF;
+@define-color base #101717;
+@define-color border #4CD1C3;
+@define-color foreground #E8F1EF;
+@define-color background #121212;
+@define-color hover #1d2a29;
+@define-color accent #3cc5b6;
+
+#window {
+  background: transparent;
+  border-radius: 0;
+}
+
+#window > #box,
+#box {
+  background: alpha(@background, 0.85);
+  color: @text;
+  border: 2px solid @border;
+  border-radius: 0; /* no rounding */
+  padding: 4px 6px; /* tighter padding */
+  margin: 0px;
+  box-shadow: 0 2px 8px rgba(76, 209, 195, 0.25);
+  -gtk-outline-radius: 0;
+}
+
+/* ──────────────────────────────────────────────────────────── */
+/* Search Field */
+/* ──────────────────────────────────────────────────────────── */
+
+#search,
+.search,
+#tray #search,
+#tray .search {
+  background: alpha(@hover, 0.3);
+  color: @foreground;
+  border: 1px solid alpha(@border, 0.5);
+  border-radius: 0; /* no rounding */
+  padding: 4px 6px; /* less padding */
+  margin: 2px; /* less margin */
+  font-size: 14px;
+  font-weight: 500;
+  transition: border 0.2s ease, background 0.2s ease;
+}
+
+#search:focus,
+.search:focus,
+#tray #search:focus,
+#tray .search:focus {
+  border-color: @border;
+  box-shadow: 0 0 0 2px alpha(@border, 0.3);
+  outline: none;
+}
+
+/* ──────────────────────────────────────────────────────────── */
+/* Bar & Scroll */
+/* ──────────────────────────────────────────────────────────── */
+
+#bar,
+.bar {
+  background: transparent;
+  border: none;
+  border-radius: 0;
+  padding: 0;
+}
+
+#scroll,
+.scroll {
+  background: transparent;
+  border: none;
+  border-radius: 0;
+  padding: 2px 0;
+}
+
+#list,
+.list {
+  background: transparent;
+  border: none;
+  border-radius: 0;
+}
+
+/* ──────────────────────────────────────────────────────────── */
+/* Item Styling */
+/* ──────────────────────────────────────────────────────────── */
+
+#item,
+.item {
+  background: transparent;
+  color: @text;
+  border: none;
+  border-radius: 0; /* no rounding */
+  padding: 2px 6px; /* tighter padding */
+  margin: 1px 0; /* less spacing */
+  transition: all 0.2s ease;
+}
+
+#item:hover,
+.item:hover {
+  background: alpha(@hover, 0.35);
+  color: @foreground;
+  transform: translateX(2px);
+  border-radius: 0;
+}
+
+#item:selected,
+.item:selected,
+#item:focus,
+.item:focus,
+#item:checked,
+.item:checked {
+  background: @accent;
+  color: @selected-text;
+  font-weight: 600;
+  transform: translateX(3px);
+  box-shadow: 0 2px 6px alpha(@accent, 0.3);
+  border-radius: 0;
+}
+
+#item:active,
+.item:active {
+  background: @border;
+  color: @background;
+  transform: scale(0.98);
+}
+
+#item .title {
+  color: @foreground;
+  font-weight: 500;
+  font-size: 13px;
+}
+
+#item:selected .title,
+.item:selected .title,
+#item:focus .title,
+.item:focus .title,
+#item:checked .title,
+.item:checked .title {
+  color: @selected-text;
+  font-weight: 600;
+}
+
+#item .subtitle {
+  color: alpha(@text, 0.7);
+  font-size: 11px;
+  font-weight: normal;
+}
+
+#item:selected .subtitle,
+.item:selected .subtitle,
+#item:focus .subtitle,
+.item:focus .subtitle,
+#item:checked .subtitle,
+.item:checked .subtitle {
+  color: alpha(@selected-text, 0.8);
+}
+
+#item .icon {
+  margin-right: 10px; /* slightly less space */
+  -gtk-icon-size: 18px;
+}
+
+/* ──────────────────────────────────────────────────────────── */
+/* Scrollbar */
+/* ──────────────────────────────────────────────────────────── */
+
+scrollbar {
+  background: transparent;
+  border: none;
+  width: 5px;
+}
+
+scrollbar slider {
+  background: alpha(@border, 0.6);
+  border-radius: 0; /* flat */
+  border: none;
+  min-height: 16px;
+}
+
+scrollbar slider:hover {
+  background: @border;
+}
+
+scrollbar trough {
+  background: transparent;
+  border-radius: 0;
+}

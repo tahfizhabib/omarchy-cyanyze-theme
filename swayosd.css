@@ -1,0 +1,10 @@
+/* ────────────────────────────────────────────────────────────
+ * Custom Theme for SwayOSD — Omarchist Arctic Bloom (Cyan)
+ * ────────────────────────────────────────────────────────────
+ */
+
+@define-color background-color #101717;
+@define-color border-color #4CD1C3;
+@define-color label #E8F1EF;
+@define-color image #4CD1C3;
+@define-color progress #4CD1C3;

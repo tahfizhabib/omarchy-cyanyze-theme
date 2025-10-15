@@ -1,0 +1,38 @@
+# ────────────────────────────────────────────────────────────
+# Omarchy Custom Theme for Alacritty — Arctic Bloom Cyan
+# Generated with Omarchist
+# ────────────────────────────────────────────────────────────
+
+[colors]
+[colors.primary]
+background = "#101717"       # dark cyan base
+foreground = "#E8F1EF"       # soft cyan/white text
+dim_foreground = "#7C8A85"   # muted cyan text
+
+[colors.cursor]
+text = "#101717"
+cursor = "#4CD1C3"           # bright cyan cursor
+
+[colors.selection]
+text = "CellForeground"
+background = "#2C3433"       # dark muted cyan selection
+
+[colors.normal]
+black   = "#101717"
+red     = "#E77C7C"
+green   = "#76C5A1"           # cyan-green
+yellow  = "#D8C77C"
+blue    = "#5BAEDB"           # cyan-blue
+magenta = "#B68AD9"
+cyan    = "#4CD1C3"           # bright cyan
+white   = "#E8F1EF"
+
+[colors.bright]
+black   = "#2C3433"
+red     = "#F18989"
+green   = "#88D3AF"           # lighter cyan-green
+yellow  = "#EAD988"
+blue    = "#6BC2E8"           # lighter cyan-blue
+magenta = "#C59AE8"
+cyan    = "#5EE2D2"           # bright cyan highlight
+white   = "#F4FAF8"
