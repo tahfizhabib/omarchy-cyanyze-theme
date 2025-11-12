@@ -1,20 +1,23 @@
-# Cyanyze - Cyan Theme for Omarchy
+# Cyanyze: Cyan-themed modern design for Omarchy
 
-**Cyanyze** is a minimal and modern cyan-themed design for Omarchy, enhancing your terminal and UI with clear, readable, and visually appealing colors.  
+A minimal and modern cyan-themed design that enhances your desktop environment with clear, readable, and visually appealing colors. Cyanyze features a refreshing cyan palette that provides excellent contrast and readability while maintaining a clean aesthetic. Built specifically for Omarchy, this theme provides consistent styling across your window manager, terminal, applications, and system components.
 
----
 
-## Preview
+| Walker launcher preview |
+| :--: |
+| ![desktop](Media/1.png) |
 
-![1](Media/1.png)  
-![2](Media/2.png)  
-![3](Media/3.png)  
+| Multi-window workspace layout |
+| :--: |
+| ![workspace](Media/2.png) |
 
----
+| Other Applications Preview |
+| :--: |
+| ![terminal](Media/3.png) |
 
 ## Installation
 
-Install Cyanyze with a single command:
-
 ```bash
 omarchy-theme-install https://github.com/tahfizhabib/omarchy-cyanyze-theme
+```
+
